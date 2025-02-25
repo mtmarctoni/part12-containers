@@ -1,0 +1,13 @@
+Script started on 2025-02-24 11:10:33+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;mtm@MiniMTM: /mnt/c/Users/marct[01;32mmtm@MiniMTM[00m:[01;34m/mnt/c/Users/marct[00m$ docker run -it ubuntu bash
+[?2004l[?2004h]0;root@6b7af9f6490b: /root@6b7af9f6490b:/# mkdir usr/src/app
+[?2004l[?2004h]0;root@6b7af9f6490b: /root@6b7af9f6490b:/# cd usr/src/app/
+[?2004l[?2004h]0;root@6b7af9f6490b: /usr/src/approot@6b7af9f6490b:/usr/src/app# touch index.js
+[?2004l[?2004h]0;root@6b7af9f6490b: /usr/src/approot@6b7af9f6490b:/usr/src/app# ls
+[?2004lindex.js
+[?2004h]0;root@6b7af9f6490b: /usr/src/approot@6b7af9f6490b:/usr/src/app# exit
+[?2004lexit
+[?2004h]0;mtm@MiniMTM: /mnt/c/Users/marct[01;32mmtm@MiniMTM[00m:[01;34m/mnt/c/Users/marct[00m$ exit
+[?2004lexit
+
+Script done on 2025-02-24 11:12:23+01:00 [COMMAND_EXIT_CODE="0"]
