@@ -1,7 +1,9 @@
 const express = require('express');
 const { Todo } = require('../mongo')
 const router = express.Router();
-const {MONGO_URL} = require('../util/config')
+const { MONGO_URL } = require('../util/config')
+
+const { incrementTodoCounter } = require('../redis/todoCount')
 
 /* GET todos listing. */
 router.get('/', async (_, res) => {
@@ -18,6 +20,7 @@ router.get('/', async (_, res) => {
 
 /* POST todo to listing. */
 router.post('/', async (req, res) => {
+  incrementTodoCounter()
   const todo = await Todo.create({
     text: req.body.text,
     done: false
