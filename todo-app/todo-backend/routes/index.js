@@ -19,6 +19,8 @@ router.get('/', async (req, res) => {
 router.get('/statistics', async (_, res) => {
   try {
     const todoCounter = await getAddedTodoCount()
+    console.log('todoCounter', todoCounter);
+    
     res.json({ "added_todos": todoCounter })
   } catch (error) {
     console.error(error)
